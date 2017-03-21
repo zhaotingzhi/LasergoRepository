@@ -5,15 +5,71 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.lasergo.daoyun.lasergo.MainActivity">
 
     <TextView
-        android:id="@+id/sample_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginLeft="150px"
+        android:layout_marginStart="150px"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginTop="295px"
+        android:textSize="35px"
+        tools:text="@string/username" />
+
+    <EditText
+
+        android:layout_width="350px"
+        android:background="@drawable/editsharp"
+        android:layout_height="80px"
+        android:inputType="textPersonName"
+        android:paddingLeft="20px"
+        android:hint="@string/username_hint"
+        android:textSize="35px"
+        android:layout_marginTop="265px"
+        android:layout_marginLeft="260px"
+        android:ems="10"
+        android:id="@+id/editText" />
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="@string/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="400px"
+        android:textSize="35px"
+        android:id="@+id/textView2" />
+    <EditText
+
+        android:layout_width="350px"
+        android:background="@drawable/editsharp"
+        android:layout_height="80px"
+        android:inputType="textPersonName"
+        android:paddingLeft="35px"
+        android:hint="请输入密码"
+        android:textSize="35px"
+        android:layout_marginTop="370px"
+        android:layout_marginLeft="260px"
+        android:ems="10"
+        android:id="@+id/editText1" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="250px"
+        android:layout_height="40px"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="480px"
+        android:id="@+id/checkBox" />
+
+    <Button
+        android:text="@string/login"
+        android:layout_width="300px"
+        android:layout_marginLeft="240px"
+        android:layout_height="100px"
+        android:id="@+id/button"
+        android:layout_marginTop="550px"
+        />
+
 </RelativeLayout>
