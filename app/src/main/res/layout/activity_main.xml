@@ -1,75 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.lasergo.daoyun.lasergo.MainActivity">
+    android:background="@mipmap/timg"
+    android:layout_height="match_parent">
+
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:text="@string/start_angle"
+        android:layout_width="180px"
+        android:layout_height="50px"
+        android:textColor="@android:color/black"
         android:layout_marginLeft="150px"
         android:layout_marginStart="150px"
-        android:id="@+id/textView"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:layout_marginTop="295px"
+        android:layout_marginTop="200px"
         android:textSize="35px"
-        tools:text="@string/username" />
+        android:id="@+id/textView3" />
 
     <EditText
-
-        android:layout_width="350px"
-        android:background="@drawable/editsharp"
-        android:layout_height="80px"
-        android:inputType="textPersonName"
-        android:paddingLeft="20px"
-        android:hint="@string/username_hint"
+        android:layout_width="220px"
+        android:layout_height="50px"
+        android:text="89"
+        android:paddingLeft="85px"
         android:textSize="35px"
-        android:layout_marginTop="265px"
-        android:layout_marginLeft="260px"
-        android:ems="10"
-        android:id="@+id/editText" />
-
-    <TextView
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:text="@string/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150px"
-        android:layout_marginTop="400px"
-        android:textSize="35px"
-        android:id="@+id/textView2" />
-    <EditText
-
-        android:layout_width="350px"
-        android:background="@drawable/editsharp"
-        android:layout_height="80px"
-        android:inputType="textPersonName"
-        android:paddingLeft="35px"
-        android:hint="请输入密码"
-        android:textSize="35px"
-        android:layout_marginTop="370px"
-        android:layout_marginLeft="260px"
-        android:ems="10"
-        android:id="@+id/editText1" />
-
-    <CheckBox
-        android:text="CheckBox"
-        android:layout_width="250px"
-        android:layout_height="40px"
-        android:layout_marginLeft="200px"
-        android:layout_marginTop="480px"
-        android:id="@+id/checkBox" />
-
-    <Button
-        android:text="@string/login"
-        android:layout_width="300px"
-        android:layout_marginLeft="240px"
-        android:layout_height="100px"
-        android:id="@+id/button"
-        android:layout_marginTop="550px"
+        android:layout_marginLeft="350px"
+        android:layout_marginTop="200px"
+        android:background="@drawable/editshape"
+        android:id="@+id/Ed1"
         />
 
+    <TextView
+        android:text="@string/stop_angle"
+        android:layout_width="180px"
+        android:layout_height="50px"
+        android:layout_marginLeft="150px"
+
+        android:textColor="@android:color/black"
+        android:layout_marginStart="150px"
+        android:layout_marginTop="300px"
+        android:textSize="35px"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:layout_width="220px"
+        android:layout_height="50px"
+        android:text="271"
+        android:paddingLeft="85px"
+        android:textSize="35px"
+        android:layout_marginLeft="350px"
+        android:layout_marginTop="300px"
+        android:background="@drawable/editshape"
+        android:id="@+id/Ed2"
+        />
+
+    <TextView
+        android:text="@string/scan_speed"
+        android:layout_width="180px"
+        android:layout_height="50px"
+
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="150px"
+        android:layout_marginStart="150px"
+        android:layout_marginTop="400px"
+        android:textSize="35px"
+        android:id="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="220px"
+        android:layout_height="50px"
+        android:layout_marginLeft="350px"
+        android:layout_marginTop="400px"
+        android:paddingLeft="85px"
+        android:background="@drawable/editshape"
+        android:entries="@array/speed_array" />
+    <TextView
+        android:text="@string/circle_number"
+        android:layout_width="180px"
+        android:layout_height="50px"
+        android:layout_marginLeft="150px"
+
+        android:textColor="@android:color/black"
+        android:layout_marginStart="150px"
+        android:layout_marginTop="500px"
+        android:textSize="35px"
+        android:id="@+id/textView6" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="220px"
+        android:layout_height="50px"
+        android:layout_marginLeft="350px"
+        android:layout_marginTop="500px"
+        android:paddingLeft="85px"
+        android:background="@drawable/editshape"
+        android:entries="@array/circle_number" />
+    <Button
+    android:id="@+id/bt_start_scan"
+    android:layout_width="300px"
+    android:paddingBottom="5px"
+    android:paddingTop="5px"
+    android:layout_marginLeft="240px"
+    android:layout_height="100px"
+    android:text="@string/start_scan"
+    android:textSize="35px"
+    android:layout_marginTop="600px" />
+
+    <Button
+        android:id="@+id/bt_stop_scan"
+        android:layout_width="300px"
+        android:paddingBottom="5px"
+        android:paddingTop="5px"
+        android:layout_marginLeft="240px"
+        android:layout_height="100px"
+        android:text="@string/stop_scan"
+        android:textSize="35px"
+        android:layout_marginTop="700px" />
+
+    <Button
+        android:id="@+id/bt_check_file"
+        android:layout_width="300px"
+        android:paddingBottom="5px"
+        android:paddingTop="5px"
+        android:layout_marginLeft="240px"
+        android:layout_height="100px"
+        android:text="@string/check_file"
+        android:textSize="35px"
+        android:layout_marginTop="800px" />
 </RelativeLayout>

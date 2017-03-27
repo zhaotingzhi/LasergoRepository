@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/timg"
+    tools:context="com.lasergo.daoyun.lasergo.LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_ad4"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:text="@string/wifi_wifi_wifi"
+        android:textSize="30px"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+
+
+    <TextView
+        android:layout_width="120px"
+        android:layout_height="50px"
+        android:layout_marginLeft="150px"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView"
+
+        android:layout_marginTop="500px"
+        android:textSize="35px"
+        android:text="@string/userName"/>
+
+    <EditText
+
+        android:layout_width="350px"
+        android:background="@drawable/editshape"
+        android:layout_height="80px"
+        android:inputType="textPersonName"
+        android:paddingLeft="20px"
+        android:hint="@string/username_hint"
+        android:textSize="35px"
+        android:layout_marginTop="465px"
+        android:layout_marginLeft="260px"
+        android:ems="10"
+        android:id="@+id/editText" />
+
+    <TextView
+        android:text="@string/password"
+        android:textColor="@android:color/black"
+        android:layout_width="120px"
+        android:layout_height="50px"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="600px"
+        android:textSize="35px"
+        android:id="@+id/textView2" />
+    <EditText
+
+        android:layout_width="350px"
+        android:background="@drawable/editshape"
+        android:layout_height="80px"
+        android:inputType="textPersonName"
+        android:paddingLeft="35px"
+        android:hint="@string/please_input_password"
+        android:textSize="35px"
+        android:layout_marginTop="570px"
+        android:layout_marginLeft="260px"
+        android:ems="10"
+        android:id="@+id/editText1" />
+
+    <CheckBox
+        android:textColor="@android:color/black"
+        android:layout_width="70px"
+        android:layout_height="60px"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:textSize="25px"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="680px"
+        android:id="@+id/checkBox" />
+
+    <Button
+        android:text="@string/login"
+        android:layout_width="300px"
+        android:paddingBottom="5px"
+        android:paddingTop="5px"
+        android:layout_marginLeft="240px"
+        android:layout_height="100px"
+        android:id="@+id/login"
+        android:textSize="35px"
+        android:layout_marginTop="750px"
+        />
+
+    <TextView
+        android:text="@string/remember_password"
+        android:layout_width="200px"
+        android:layout_height="40px"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="285px"
+        android:layout_marginTop= "695px"
+        android:id="@+id/textView7" />
+
+</RelativeLayout>

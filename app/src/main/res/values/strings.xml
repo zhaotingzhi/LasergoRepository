@@ -4,4 +4,25 @@
     <string name="password">密码：</string>
     <string name="username_hint">请输入账户名</string>
     <string name="login">登录</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="userName">账号：</string>
+    <string name="start_angle">起始角度：</string>
+    <string name="stop_angle">终止角度：</string>
+    <string name="scan_speed">扫描速度：</string>
+    <string name="circle_number">扫描圈数：</string>
+    <string name="start_scan">开始扫描</string>
+    <string name="stop_scan">停止扫描</string>
+    <string name="check_file">查看文件</string>
+    <string name="wifi_wifi_wifi">登录之前请先选择正确的wifi连接 登录之前请先选择正确的wifi连接 登录之前请先选择正确的wifi连接</string>
+    <string name="remember_password">是否记住密码</string>
+    <string-array name="speed_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="circle_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
 </resources>
