@@ -15,14 +15,26 @@
     <string name="check_file">查看文件</string>
     <string name="wifi_wifi_wifi">登录之前请先选择正确的wifi连接 登录之前请先选择正确的wifi连接 登录之前请先选择正确的wifi连接</string>
     <string name="remember_password">是否记住密码</string>
+    <string name="please_check_wifi">请检查网络连接</string>
+    <string name="connect_error">连接错误！</string>
+    <string name="please_login">请先登录</string>
+    <string name="file_directory">/home/clickmox/Documents/</string>
+    <string name="file_no_found">没有找到文件</string>
+    <string name="scan_file">扫描文件</string>
+    <string name="canceling">取消</string>
+    <string name="previewing">预览</string>
+    <string name="please_select_one_file">请先选择一个文件</string>
+    <string name="download">下载</string>
+    <string name="loading">正在读取中</string>
+    <string name="stop_command">rostopic pub dxl_setting std_msgs/Int16MultiArray \'{data:[11,5,4,89,271]}\' \n</string>
     <string-array name="speed_array">
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
     <string-array name="circle_number">
-        <item>1</item>
         <item>2</item>
+        <item>1</item>
         <item>3</item>
     </string-array>
 </resources>

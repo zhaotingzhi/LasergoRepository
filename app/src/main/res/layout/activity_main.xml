@@ -25,7 +25,7 @@
         android:layout_marginLeft="350px"
         android:layout_marginTop="200px"
         android:background="@drawable/editshape"
-        android:id="@+id/Ed1"
+        android:id="@+id/start_angle"
         />
 
     <TextView
@@ -49,7 +49,7 @@
         android:layout_marginLeft="350px"
         android:layout_marginTop="300px"
         android:background="@drawable/editshape"
-        android:id="@+id/Ed2"
+        android:id="@+id/stop_angle"
         />
 
     <TextView
@@ -65,12 +65,14 @@
         android:id="@+id/textView5" />
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/speed_array"
         android:layout_width="220px"
         android:layout_height="50px"
         android:layout_marginLeft="350px"
         android:layout_marginTop="400px"
-        android:paddingLeft="85px"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:dropDownVerticalOffset = "3px"
         android:background="@drawable/editshape"
         android:entries="@array/speed_array" />
     <TextView
@@ -85,12 +87,14 @@
         android:textSize="35px"
         android:id="@+id/textView6" />
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/circle_number"
         android:layout_width="220px"
         android:layout_height="50px"
         android:layout_marginLeft="350px"
         android:layout_marginTop="500px"
-        android:paddingLeft="85px"
+        android:spinnerMode="dropdown"
+       android:dropDownVerticalOffset = "3px"
+        android:gravity="center"
         android:background="@drawable/editshape"
         android:entries="@array/circle_number" />
     <Button

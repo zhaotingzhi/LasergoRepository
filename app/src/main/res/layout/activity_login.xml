@@ -49,7 +49,7 @@
         android:layout_marginTop="465px"
         android:layout_marginLeft="260px"
         android:ems="10"
-        android:id="@+id/editText" />
+        android:id="@+id/et_username" />
 
     <TextView
         android:text="@string/password"
@@ -72,7 +72,7 @@
         android:layout_marginTop="570px"
         android:layout_marginLeft="260px"
         android:ems="10"
-        android:id="@+id/editText1" />
+        android:id="@+id/et_password" />
 
     <CheckBox
         android:textColor="@android:color/black"
@@ -83,7 +83,7 @@
         android:textSize="25px"
         android:layout_marginLeft="200px"
         android:layout_marginTop="680px"
-        android:id="@+id/checkBox" />
+        android:id="@+id/rem_number" />
 
     <Button
         android:text="@string/login"
