@@ -2,7 +2,7 @@ package com.lasergo.daoyun.lasergo;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -33,6 +33,7 @@ import com.jcraft.jsch.SftpATTRS;
 import com.jcraft.jsch.SftpException;
 import com.jcraft.jsch.SftpProgressMonitor;
 import com.lasergo.daoyun.conts.Conts;
+import com.lasergo.dialog.CustomProgressDialog;
 import com.lasergo.view.FolderFilePicker;
 import com.zjl.autolayout.AutoUtils;
 
@@ -175,16 +176,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
         });
 
-        AlertDialog dialog = new AlertDialog.Builder(MainActivity.this).setTitle(getString(R.string.scan_file)).setView(layout)
-                // .setAdapter(new ArrayAdapter<String>(MainActivity.this,
-                // R.layout.item, R.id.tv, items),
-                // new AlertDialog.OnClickListener() {
-                // @Override
-                // public void onClick(DialogInterface dialog, int which) {
-                // downloadFile = items[which];
-                // }
-                // })
-
+        AlertDialog dialog = new AlertDialog.Builder(MainActivity.this,R.style.AlertDialog).setTitle(getString(R.string.scan_file)).setView(layout)
                 .setNegativeButton(getString(R.string.canceling), new AlertDialog.OnClickListener(){
 
                     @Override
@@ -356,8 +348,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
 
-            // set item values to the viewHolder:
-
             FileItem markerItem = getItem(position);
             if (null != markerItem)
             {
@@ -365,7 +355,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
 
             if(mSelect==position){
-                convertView.setBackgroundResource(R.color.seashell);  //选中项背景
+                convertView.setBackgroundResource(R.color.lightsteelblue);  //选中项背景
             }else{
                 convertView.setBackgroundResource(R.color.white);  //其他项背景
             }
@@ -389,15 +379,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
     private long transfered;
-    private ProgressDialog dialog;
+    private Dialog mDialog;
     private Handler handler = new Handler() {
 
         public void handleMessage(Message msg) {
             if (msg.what == 11) {
-                dialog = ProgressDialog.show(MainActivity.this, "", getString(R.string.loading), true, true);
+                mDialog = CustomProgressDialog.createLoadingDialog(MainActivity.this, "正在读取中...");
+                mDialog.setCancelable(false);//允许返回
+                mDialog.show();//显示
             }
             if (msg.what == 22) {
-                dialog.dismiss();
+                mDialog.dismiss();
             }
         };
     };

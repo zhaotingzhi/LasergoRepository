@@ -27,6 +27,7 @@
     <string name="download">下载</string>
     <string name="loading">正在读取中</string>
     <string name="stop_command">rostopic pub dxl_setting std_msgs/Int16MultiArray \'{data:[11,5,4,89,271]}\' \n</string>
+    <string name="scan_files">扫描文件</string>
     <string-array name="speed_array">
         <item>1</item>
         <item>2</item>
